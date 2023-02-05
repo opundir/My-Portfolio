@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f95f6faa79.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/newlogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Technology Stack</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>I'm <span>Ojasvi</span><br> from NIT Hamirpur</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/onstage.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello Everyone :)<br>
+                        As a front-end web developer, I have a strong understanding of HTML, CSS, JavaScript and React
+                        JS. My expertise lies in creating user-friendly, interactive and visually appealing websites
+                        that meet client requirements and provide a seamless user experience. With my skills, I strive
+                        to bring ideas to life and deliver exceptional results for each project I work on.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>C, C++, Python, JS</li>
+                            <li><span>Web Development</span><br>html, CSS, JS, ReactJS, Bootstrap</li>
+                            <li><span>Others</span><br>Python with libraries: Pandas, Numpy, Matplotlib <br>Data
+                                Structure and Algorithm</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Student</span><br>Currently I am a student and I have no prior industrial
+                                experience.</li>
+                            <!-- <li><span>Web Development</span><br>Frontend Web Developer</li>
+                            <li><span>Data Analyst</span><br>Python</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>National Institute of Technology Hamirpur</span><br>2024 : Btech in Electronics
+                                and Communication </li>
+                            <li><span>LJP Saraswati Vidya Mandir Inter College</span><br>2019 : Intermediate<br> 2017 :
+                                Highschool</li>
+                            <!-- <li><span>2017</span><br>Highschool, LJP Saraswati Vidya Mandir Inter College</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------Services----------------------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Technology Stack</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Problem Solving</h2>
+                    <p>Problem solver with a combination of creativity and critical thinking. Proven track record of
+                        delivering effective solutions in a variety of projects. Committed to continuously expanding
+                        skills and knowledge.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-stack-overflow"></i>
+                    <h2> Data Structure and Algorithm </h2>
+                    <p> Expertise in data structures and algorithms. Efficient problem solver with a passion for staying
+                        up to date with advancements in the field.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>Web Development</h2>
+                    <p>Experienced front-end developer specializing in HTML, CSS, and JavaScript. Learning modern
+                        frameworks and libraries. Passionate about creating dynamic, intuitive user experiences for
+                        websites.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>React JS</h2>
+                    <p>As a front-end developer with a focus on React, I bring dynamic and engaging user experiences to
+                        life. </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Data Science</h2>
+                    <p>Data scientist skilled in Python with experience using Pandas, Numpy, and Matplotlib. Driven to
+                        uncover insights and drive solutions through data-driven analysis.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-square-js"></i>
+                    <h2>JavaScript</h2>
+                    <p>Web developer skilled in JavaScript, HTML, and CSS. Expert in creating dynamic and interactive
+                        websites using modern frameworks and libraries</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h2>Bootstrap</h2>
+                    <p>Web developer skilled in Bootstrap, HTML, CSS, and JavaScript. Expert in creating responsive and
+                        visually appealing websites using the latest advancements in the Bootstrap framework.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------Portfolio/ My Work------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/pr02.png">
+                    <div class="layer">
+                        <h3>Text Editor App</h3>
+                        <p>This app is used to edit the input text and apply some operations to the given text. This is
+                            a web app based on react js and javascript. And for styles, I used the bootstrap framework.
+                            This app also has dark or light modes. For other backgrounds, some color palettes are also
+                            available.</p>
+                        <a href="https://opundir.github.io/Text-Editor/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/pr01.png">
+                    <div class="layer">
+                        <h3>Portfolio App</h3>
+                        <p>Welcome to my portfolio website!This website is a showcase of my skills and expertise,
+                            highlighting the projects I've worked on and the technologies I've utilized. The site was
+                            built using HTML, CSS, and JavaScript, and was designed with the user in mind, ensuring a
+                            seamless browsing experience. From the modern and responsive layout to the interactive
+                            elements, I hope you enjoy exploring my portfolio and get a glimpse of my capabilities as a
+                            web developer</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>Lorem ipsum dolor sit,
+                            amet consectetur adipisicing elit. Fuga
+                            consectetur quasi corporis maxime dolorem.
+                            Alias perspiciatis explicabo ea</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/opundir" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- --------------------------------=====Contact----- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>ojasvipundir02gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/ojasvi_pundir01/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ojasvi_pundir01/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/ojasvi_pundir"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/in/ojasvi-pundir-8812ba202/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1BH0ccrGFuO412GHAHkGQvlink"
+                        class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @Ojasvi<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+
+    <!-- -----------------------Script--------------------- -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+
+
+    <!-- Sheet Response -->
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzptEL3g7tIFLrtWDJcdr5cf641Ox8gCnWmuH2jjLWIbZb_CaGF3iGy5PiNqGl0qhc/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully !"
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+
+</body>
+
+</html>
